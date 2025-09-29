@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: laila-pod
+  labels:
+    type: chamkili
+    hight: 4feet
+spec:
+  containers:
+    - name: netflixcontainer
+      image: devopsinsiders/netflix-clone
+      ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: majnu-pod
+  labels:
+    type: tondu
+    hight: 4.5feet
+spec:
+  containers:
+    - name: firefoxcontainer
+      image: linuxserver/firefox
+      ports:
+        - containerPort: 3000
